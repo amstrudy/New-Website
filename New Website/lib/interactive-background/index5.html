@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js demo5">
+	<head>
+		<title>Anja's Website</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+   	<script type="text/javascript" src="js/jquery.interactive_bg.js"></script>
+		<!-- Edit Below -->
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+	<body>
+		<div class="container bg" data-ibg-bg="keyboard.jpg">
+			<div class="header">
+				<div id="left" onmouseenter="hoverLeftOn();" onmouseleave="hoverLeftOff();"><h1>ABOUT</h1></div>
+				<div id="right" onmouseenter="hoverRightOn();" onmouseleave="hoverRightOff();"><h1>PORTFOLIO</h1></div>
+			</div>
+    	<script>
+        $(".bg").interactive_bg({
+					wrapContent: true
+				});
+
+				function hoverLeftOn () {
+					$("#left").css("background", "rgba(0, 0, 0, .2)");
+				}
+
+				function hoverRightOn () {
+					$("#right").css("background", "rgba(0, 0, 0, .2)");
+				}
+
+				function hoverLeftOff () {
+					$("#left").css("background", "rgba(0, 0, 0, 0)");
+				}
+
+				function hoverRightOff () {
+					$("#right").css("background", "rgba(0, 0, 0, 0)");
+				}
+      </script>
+		</div>
+	</body>
+</html>

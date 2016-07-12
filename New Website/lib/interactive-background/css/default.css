@@ -1,0 +1,53 @@
+body, html {
+	padding: 0;
+	margin: 0;
+  	font-size: 100%;
+  	-webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+.header {
+	height: 100%;
+	width: 100%;
+}
+
+/* Font Icons */
+@font-face {
+  font-family: "vertigo";
+  src: url('../fonts/vertigo/VertigoFLF.ttf');
+}
+
+/* Main Style */
+body {
+	font-family: "vertigo", "arial";
+	color: #fff;
+	background: #f8d135;
+}
+
+h1, h2, h3 {
+	font-family: "vertigo", "arial";
+}
+
+h1 {
+	font-size: 140px;
+}
+
+#left {
+  height: 100%;
+	width: 50%;
+	float: left;
+	background: rgba(0, 0, 0, 0)
+
+}
+
+#right {
+  height: 100%;
+	width: 50%;
+	float: right;
+	background: rgba(0, 0, 0, 0);
+}
+
+/* Responsive */
+@media screen and (max-width: 25em) {
+
+}
