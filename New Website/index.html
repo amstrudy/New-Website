@@ -12,10 +12,15 @@
 	<body>
 		<div class="container bg" data-ibg-bg="keyboard.jpg">
 			<div class="header">
-				<!-- <div id="about"></div> -->
+				<div id="about"></div>
         <div id="left" onmouseenter="hoverLeftOn();" onmouseleave="hoverLeftOff();" onclick="leftClick();"><h1>ABOUT</h1></div>
 				<div id="right" onmouseenter="hoverRightOn();" onmouseleave="hoverRightOff();" onclick="rightClick();"><h1>PORTFOLIO</h1></div>
-        <div id="portfolio"></div>
+        <div id="portfolio">
+					<ul id="projects">
+						<li class="proj-list"><a class="proj-link" href="./projects/OfficeEthicsHomework.docx"><img src="./projects/OfficeEthics.png"></img></a></li>
+						<li class="proj-list"><a class="proj-link" href="./projects/blimp.jpg"><img src="./projects/blimp.jpg"></img></a></li>
+					</ul>
+				</div>
 			</div>
     	<script>
 				$(".bg").interactive_bg({
