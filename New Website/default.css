@@ -9,19 +9,14 @@ body, html {
 .header {
 	height: 100%;
 	width: 100%;
+	overflow: hidden;
+	position: relative;
 }
 
 /* Font Icons */
 @font-face {
   font-family: "vertigo";
   src: url('/Users/anjasheppard/Documents/Github/New-Website/New Website/fonts/vertigo/VertigoFLF.ttf');
-}
-
-/* Main Style */
-body {
-	font-family: "vertigo", "arial";
-	color: #fff;
-	background: #f8d135;
 }
 
 h1, h2, h3 {
@@ -32,32 +27,48 @@ h1 {
 	font-size: 140px;
 }
 
-#left {
-  height: 100%;
-	width: 50%;
-	float: left;
-	background: rgba(0, 0, 0, 0);
+#left, #right, #about, #portfolio {
 	-webkit-transition: all 0.7s ease-out;
        -moz-transition: all 0.7s ease-out;
         -ms-transition: all 0.7s ease-out;
          -o-transition: all 0.7s ease-out;
             transition: all 0.7s ease-out;
+}
 
+#left {
+	position: absolute;
+  height: 100%;
+	width: 50%;
+	float: left;
+	background: rgba(0, 0, 0, 0);
 }
 
 #right {
   height: 100%;
 	width: 50%;
 	float: right;
-	position: relative;
-  overflow: hidden;
+	position: absolute;
+	left: 50%;
 	background: rgba(0, 0, 0, 0);
-	-webkit-transition: all 0.7s ease-out;
-       -moz-transition: all 0.7s ease-out;
-        -ms-transition: all 0.7s ease-out;
-         -o-transition: all 0.7s ease-out;
-            transition: all 0.7s ease-out;
 }
+
+#portfolio {
+	position: relative;
+	height: 100%;
+	width: 50%;
+	overflow: hidden;
+	background-color: rgba(0, 0, 0, .2);
+	left: 100%;
+}
+
+/*#about {
+	position: relative;
+	height: 100%;
+	width: 50%;
+	overflow: hidden;
+	background-color: rgba(0, 0, 0, .2);
+	right: 100%;
+}*/
 
 /* Responsive */
 @media screen and (max-width: 25em) {

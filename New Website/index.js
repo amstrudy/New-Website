@@ -19,17 +19,20 @@ function hoverRightOff () {
 
 function rightClick () {
   var move;
+  var portPerc;
   if (port) {
     move = "-100%";
+    portPerc = "50%";
     port = false;
   } else {
     move = "0%";
+    portPerc = "100%";
     port = true;
   }
   $("#left").css("-webkit-transform", "translate(" + move + ", 0px)");
   $("#left").css("-moz-transform:", "translate(" + move + ", 0px)");
   $("#left").css("-ms-transform", "translate(" + move + ", 0px)");
-  $("#left").css("-o-transform", "ttranslate(" + move + ", 0px)");
+  $("#left").css("-o-transform", "translate(" + move + ", 0px)");
   $("#left").css("transform", "translate(" + move + ", 0px)");
 
   $("#right").css("-webkit-transform", "translate(" + move + ", 0px)");
@@ -37,10 +40,16 @@ function rightClick () {
   $("#right").css("-ms-transform", "translate(" + move + ", 0px)");
   $("#right").css("-o-transform", "translate(" + move + ", 0px)");
   $("#right").css("transform", "translate(" + move + ", 0px)");
+
+  $("#portfolio").css("left", portPerc);
+
 }
+$('#right').on('click', function() {
+  $('#right').css('left', '0');
+  $('#portfolio').css('left', '50%');
+});
 
 function leftClick () {
-  console.log(abt);
   var move;
   if (abt) {
     move = "100%";
@@ -52,7 +61,7 @@ function leftClick () {
   $("#left").css("-webkit-transform", "translate(" + move + ", 0px)");
   $("#left").css("-moz-transform:", "translate(" + move + ", 0px)");
   $("#left").css("-ms-transform", "translate(" + move + ", 0px)");
-  $("#left").css("-o-transform", "ttranslate(" + move + ", 0px)");
+  $("#left").css("-o-transform", "translate(" + move + ", 0px)");
   $("#left").css("transform", "translate(" + move + ", 0px)");
 
   $("#right").css("-webkit-transform", "translate(" + move + ", 0px)");
