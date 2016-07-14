@@ -42,20 +42,18 @@ function rightClick () {
   $("#right").css("transform", "translate(" + move + ", 0px)");
 
   $("#portfolio").css("left", portPerc);
-
 }
-$('#right').on('click', function() {
-  $('#right').css('left', '0');
-  $('#portfolio').css('left', '50%');
-});
 
 function leftClick () {
   var move;
+  var portPerc;
   if (abt) {
     move = "100%";
+    portPerc = "50%";
     abt = false;
   } else {
     move = "0%";
+    portPerc = "520%";
     abt = true;
   }
   $("#left").css("-webkit-transform", "translate(" + move + ", 0px)");
@@ -69,4 +67,6 @@ function leftClick () {
   $("#right").css("-ms-transform", "translate(" + move + ", 0px)");
   $("#right").css("-o-transform", "translate(" + move + ", 0px)");
   $("#right").css("transform", "translate(" + move + ", 0px)");
+
+  $("#about").css("right", portPerc);
 }

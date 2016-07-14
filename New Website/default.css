@@ -26,8 +26,8 @@ h1 {
 
 #left, #right, #about, #portfolio, img {
 	-webkit-transition: all 0.7s ease-out;
-       -moz-transition: all 0.7s ease-out;
-        -ms-transition: all 0.7s ease-out;
+    -moz-transition: all 0.7s ease-out;
+      -ms-transition: all 0.7s ease-out;
          -o-transition: all 0.7s ease-out;
             transition: all 0.7s ease-out;
 }
@@ -50,7 +50,7 @@ h1 {
 }
 
 #portfolio {
-	position: relative;
+	position: absolute;
 	height: 100%;
 	width: 50%;
 	overflow: hidden;
@@ -58,14 +58,14 @@ h1 {
 	left: 100%;
 }
 
-/*#about {
-	position: relative;
+#about {
+	position: absolute;
 	height: 100%;
 	width: 50%;
 	overflow: hidden;
 	background-color: rgba(0, 0, 0, .2);
 	right: 100%;
-}*/
+}
 
 #projects {
 	margin: 0;
@@ -86,11 +86,18 @@ img {
 	height: 10%;
 	margin: 0;
 	padding: 0;
-	opacity: .7;
+	opacity: .95;
 }
 
 img:hover {
 	transform: scale(1.1);
+}
+
+p {
+	font-family: "vertigo";
+	font-size: 32px;
+	margin: 7%;
+	background-color: rgba(0, 0, 0, .6);
 }
 
 /* Responsive */
