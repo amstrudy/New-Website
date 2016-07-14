@@ -13,7 +13,7 @@ body, html, li {
 /* Font Icons */
 @font-face {
   font-family: "vertigo";
-  src: url('/Users/anjasheppard/Documents/Github/New-Website/New Website/fonts/vertigo/VertigoFLF.ttf');
+  src: url('./fonts/vertigo/VertigoFLF.ttf');
 }
 
 h1, h2, h3 {
